@@ -85,7 +85,7 @@ axios.get("https://rest.bandsintown.com/artists/" + "zedd" + "/events?app_id=cod
 spotify.search({ type: 'track', query: 'Flava In Ya Ear'}, function(err, data){
         if (err){
             return console.log('Error: ' + err);
-        } 
+        }
         var jsonData = data.tracks.items[0];
         var music = [
             "artist: " + jsonData.artists[0].name,
@@ -104,6 +104,7 @@ axios.get("https://www.omdbapi.com/?t=" + "Fear and Loathing in Las Vegas" + "&a
     for (i = 0; i < 1; i++){
         console.log(movies)
        }
+    });
     // var movie = function(){
     //     var divider = "\n---\n"
 //     }
@@ -145,4 +146,4 @@ axios.get("https://www.omdbapi.com/?t=" + "Fear and Loathing in Las Vegas" + "&a
 
 // use fs to take info from random.txt and use to call liri command
 
-// module.exports 
+// module.exports
