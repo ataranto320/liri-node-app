@@ -18,6 +18,7 @@ axios.get("https://rest.bandsintown.com/artists/" + "zedd" + "/events?app_id=cod
         console.log(bands[i].venue.name)
         console.log(bands[i].venue.city)
         console.log(bands[i].datetime)
+        console.log(moment().format('MM/DD/YYYY'))
         // need to convert to mm/dd/yyyy
     }
 });
@@ -99,6 +100,7 @@ spotify.search({ type: 'track', query: 'Flava In Ya Ear'}, function(err, data){
 
 // movie api
 axios.get("https://www.omdbapi.com/?t=" + "Fear and Loathing in Las Vegas" + "&apikey=trilogy")
+// axios.get(queryURL)
   .then(function (response) {
     var movies = response.data
     for (i = 0; i < 1; i++){
