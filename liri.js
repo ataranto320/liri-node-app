@@ -2,6 +2,7 @@ require("dotenv").config();
 var keys = require("./keys.js");
 var Spotify = require('node-spotify-api');
 var spotify = new Spotify(keys.spotify);
+var fs = require("fs");
 
 // apis
 var axios = require("axios")
@@ -55,45 +56,15 @@ axios.get("https://www.omdbapi.com/?t=" + "Fear and Loathing in Las Vegas" + "&a
         console.log(movies.Actors)
        }
     });
-    // var movie = function(){
-    //     var divider = "\n---\n"
-//     }
-//   });
-
-//   false.appendFile("random.txt", movies + divider, function(err){
-//     if (err) throw err;
-//     console.log(movies);
-// });
-
-// // making movie command
-// var movieThis = require("movie-this")
-// var movie = function(){
-//     var divider = "\n---\n"
-// }
-
-// this.findMoive = function(movie){
-//     var queryURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
-//     axois.get(URL).then(function(response){
-//         var jsonData = response.data;
-
-//         var showMovieData = [
-//             "title: " + jsonData.title,
-//             "year: " + jsonData.year,
-//             "imdbrating: " + jsonData.imdbrating,
-//             "rtrating: " + jsonData.rtrating,
-//             "country: " + jsonData.country,
-//             "language: " + jsonData.language,
-//             "plot: " + jsonData.plot,
-//             "actors: " + jsonData.actors
-//         ].join("\n\n");
-
-//         false.appendFile("random.txt", movies + divider, function(err){
-//             if (err) throw err;
-//             console.log(movies);
-//         });
-//     });
-// };
 
 // use fs to take info from random.txt and use to call liri command
-
+fs.readFile("random.txt", "utf8", function(error, data) {
+      if (error) {
+        return console.log(error);
+      }
+        var output = data.split(",");
+        for (var i = 0; i < output.length; i++) {
+            console.log(output[i]);
+        }
+      });
 // module.exports

@@ -4,6 +4,7 @@ var moment = require("moment")
 var dotenv = require("dotenv")
 var omdb = require("omdb")
 var queryURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
+var fs = require("fs")
 
 // spotify api
 // var spotify = require("spotify");
