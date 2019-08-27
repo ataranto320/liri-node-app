@@ -17,8 +17,8 @@ axios.get("https://rest.bandsintown.com/artists/" + "zedd" + "/events?app_id=cod
     for (i = 0; i < 1; i++){
         console.log(bands[i].venue.name)
         console.log(bands[i].venue.city)
-        console.log(bands[i].datetime)
-        console.log(moment().format('MM/DD/YYYY'))
+        // console.log(bands[i].datetime)
+        console.log(moment(bands[i].datetime).format('MM/DD/YYYY'))
         // need to convert to mm/dd/yyyy
     }
 });
