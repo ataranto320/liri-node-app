@@ -19,67 +19,8 @@ axios.get("https://rest.bandsintown.com/artists/" + "zedd" + "/events?app_id=cod
         console.log(bands[i].venue.city)
         // console.log(bands[i].datetime)
         console.log(moment(bands[i].datetime).format('MM/DD/YYYY'))
-        // need to convert to mm/dd/yyyy
     }
 });
-    // handle success
-    // console.log(response.data)
-
-//   .catch(function (error) {
-//     // handle error
-//     console.log(error);
-//   })
-//   .finally(function () {
-//     // always executed
-//   });
-
-// // Make a request for a band input
-// axios.get("https://rest.bandsintown.com/artists/" + "zedd" + "/events?app_id=codingbootcamp")
-// // var jsonData = data.description.venue.datetime
-//   .then(function (response) {
-//     var bands = response.data
-//     for (i = 0; i < 5; i++){
-//         console.log(bands[i].venue.country)
-//     }
-//     // handle success
-//     // console.log(response.data)
-//   })
-//   .catch(function (error) {
-//     // handle error
-//     console.log(error);
-//   })
-//   .finally(function () {
-//     // always executed
-//   });
-
-// making concert-this command
-// var concertThis = require("concert-this")
-// var concert = function(){
-//     var divider = "\n----\n";
-
-// findConcert takes in concert and searches Bands in Town Artist Events API
-// this.findConcert = function(concert){
-    // var url for axios
-
-    // axios.get(URL).then(function(reponse){
-        // place data into var jsonData
-        // var jsonData = response.data;
-
-        // data to print for venue
-        // var showConcertData = [
-        //     "name: " + jsonData.name,
-        //     "location: " + jsonData.location,
-        //     "date: " + jsonData.date //(mm/dd/yyyy)
-        // ].join("\n\n");
-
-        // append showConcertData and divider to random.txt and print showConcertData to console
-//         false.appendFile("random.txt", showConcertData + divider, function(err){
-//             if (err) throw err;
-//             console.log(showConcertData);
-//         });
-//     });
-// };
-// };
 
 // making spotify-this-song command 
 // spotify api
@@ -104,7 +45,14 @@ axios.get("https://www.omdbapi.com/?t=" + "Fear and Loathing in Las Vegas" + "&a
   .then(function (response) {
     var movies = response.data
     for (i = 0; i < 1; i++){
-        console.log(movies)
+        // console.log(movies)
+        console.log(movies.Title)
+        console.log(movies.Year)
+        console.log(movies.Ratings)
+        console.log(movies.Country)
+        console.log(movies.Language)
+        console.log(movies.Plot)
+        console.log(movies.Actors)
        }
     });
     // var movie = function(){
