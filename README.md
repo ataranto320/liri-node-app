@@ -6,7 +6,7 @@
     b. band javascript function to return user input.
     c. spotify javascript to return user input.
     d. movie javascript to return user input.
-    e. what-does-it-say: work in progress.
+    e. what-does-it-say: to return information inside the random.txt file.
 3. Instructions to run app:
     a. User inputs values they want to obtain within the javascript code.
     b. user runs node of file in terminal to retrieve data from api.
@@ -17,4 +17,6 @@
     b. Axois API (OMDB and Bands in Town).
     c. Moment - A lightweight JavaScript date library for parsing, validating, manipulating, and formatting dates.
     d. DotEnv - Dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology.
-7. My role was the user web developer whom wrote the code with help from others when I had questions.
+    e. keys - keycode library for browser. Makes keybound event assertions simple.
+    f. fs - make file operation apis simple.
+7. My role was the web developer whom wrote the code to allow users to find information for their input. 

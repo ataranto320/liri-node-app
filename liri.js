@@ -23,9 +23,10 @@ axios.get("https://rest.bandsintown.com/artists/" + "zedd" + "/events?app_id=cod
     }
 });
 
+
 // making spotify-this-song command 
 // spotify api
-spotify.search({ type: 'track', query: 'Flava In Ya Ear'}, function(err, data){
+spotify.search({ type: 'track', query: "Flava In Ya Ear"}, function(err, data){
         if (err){
             return console.log('Error: ' + err);
         }
@@ -40,7 +41,9 @@ spotify.search({ type: 'track', query: 'Flava In Ya Ear'}, function(err, data){
     });
 
 
+
 // movie api
+
 axios.get("https://www.omdbapi.com/?t=" + "Fear and Loathing in Las Vegas" + "&apikey=trilogy")
 // axios.get(queryURL)
   .then(function (response) {
@@ -57,6 +60,7 @@ axios.get("https://www.omdbapi.com/?t=" + "Fear and Loathing in Las Vegas" + "&a
        }
     });
 
+
 // use fs to take info from random.txt and use to call liri command
 fs.readFile("random.txt", "utf8", function(error, data) {
       if (error) {
@@ -67,4 +71,25 @@ fs.readFile("random.txt", "utf8", function(error, data) {
             console.log(output[i]);
         }
       });
-// module.exports
+
+// var search = process.argv[2];
+// var term = process.argv.slice(3).join(" ");
+
+// function input (commands, userInput){
+//     switch(commands) {
+//         case "concert-this":
+//         concert(userInput);
+//         break;
+    
+//     case "spotify-this-song":
+//         spotify(userInput);
+//         break;
+    
+//     case "movie-this":
+//         movie(userInput);
+//         break;
+  
+//     case "do-what-it-says":
+//         doWhatItSays();
+//         break;
+//     }
