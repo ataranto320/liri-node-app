@@ -11,7 +11,7 @@
     a. User inputs values they want to obtain within the javascript code.
     b. user runs node of file in terminal to retrieve data from api.
 4. Screenshots: google drive link
-5. Deployed Link: work in progress.
+5. Deployed Link: https://ataranto320.github.io/liri-node-app/
 6. Technologies used: 
     a. Spotify API.
     b. Axois API (OMDB and Bands in Town).
