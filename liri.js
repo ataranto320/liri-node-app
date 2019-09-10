@@ -11,8 +11,12 @@ var moment = require("moment")
 var omdb = require("omdb")
 // var queryURL = "https://www.omdbapi.com/?t=" + movie + "&apikey=trilogy";
 
-var search = process.argv[2];
-var userInput = process.argv[3];
+// var search = process.argv[2];
+// var userInput = process.argv[3];
+
+var [, , search, ...userInput] = process.argv
+
+userInput = userInput.join(" ")
 
 console.log(search);
 console.log(userInput);
