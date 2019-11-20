@@ -21,6 +21,15 @@
     f. fs - make file operation apis simple.
 7. My role was the web developer whom wrote the code to allow users to find information for their input. 
 
+Instructions Beforehand:
+
+ - run npm init -y 
+ - run npm i node-spotify-api
+ - run npm i axios
+ - run npm i moment 
+ - run npm i dotenv
+ - run npm i fs
+
 Code Used: 
 
 - JavaScript
