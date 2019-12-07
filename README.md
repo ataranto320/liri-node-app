@@ -30,7 +30,7 @@ Instructions Beforehand:
  - run npm i dotenv
  - run npm i fs
  - In terminal, type:
-    node liri (input function: ex. spotify-this-song) and user input (song of user's choice)
+    node liri input function (ex. spotify-this-song) and user input (song of user's choice)
 
     Example: node liri spotify-this-song september
 
