@@ -34,6 +34,8 @@ Instructions Beforehand:
 
     Example: node liri spotify-this-song september
 
+    ![](images/liri.png)
+
 Code Used: 
 
 - JavaScript
