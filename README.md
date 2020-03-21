@@ -36,6 +36,6 @@ Instructions Beforehand:
 
     ![](images/liri.png)
 
-Code Used: 
+Languages: 
 
 - JavaScript
