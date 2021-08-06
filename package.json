@@ -18,10 +18,10 @@
   },
   "homepage": "https://github.com/ataranto320/liri-node-app#readme",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "dotenv": "^8.0.0",
-    "file-system": "^2.2.2",
-    "lodash": "^4.17.19",
+    "file-system": "^1.2.2",
+    "lodash": "^4.17.21",
     "moment": "^2.24.0",
     "node-spotify-api": "^1.1.1",
     "omdb": "^0.8.0"
